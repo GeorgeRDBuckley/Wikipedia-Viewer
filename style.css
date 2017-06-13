@@ -1,123 +1,63 @@
 body {
-  background-color: #FACADA;
-  font-family: Futura, Raleway, san-serif;
-  font-weight: 100;
-  color: #527A86;
+  background: #EFF2F3;
 }
 
-header#cover {
-  background: white;
-  background-image: url("http://i.huffpost.com/gen/1659504/images/o-WES-ANDERSON-facebook.jpg");
-  background-repeat:no-repeat;
-  background-size:cover;
-  background-position: 50% 50%;
-  min-height:100%;
-  padding-top:100px;
-  padding-bottom:100px;
-  -webkit-clip-path: polygon(0 0, 1600px 0, 1600px 100%, 0 87%);
-  clip-path: polygon(0 0, 1600px 0, 1600px 100%, 0 87%);
-}
-
-header h3 {
-  font-size:2.5em;
-  color: #FFF7C9;
-  font-weight:300;
-}
-
-header h3.quote {
-  background-color: #642E68;
-  display:inline;
-  line-height:56px;
-}
-
-.mobile-center {
-  text-align: center;
-  margin-bottom: 40px
-}
-
-header h3.mobile-quote {
-  font-family: Futura;
-  font-size:2em;
-  line-height: 45px;
-  width:100%;
-  text-align: center;
-  margin-bottom: 60px;
-}
-
-h3.name {
-  padding-top: 30px;
-  color: #642E68;
-}
-
-.mobile-wes-header {
-  border-radius: 100%;
-  border: 10px solid #642E68;
-  height: 100%;
+.header {
+  background-color: #209ECB;
+  position: absolute;
+  top: 0px; /* Header Height */
+  bottom: 0px; /* Footer Height */
   width: 100%;
-  margin: 30px 0px 30px 0px;
+  -webkit-transition: all 0.7s ease;
+    -moz-transition: all 0.7s ease;
+      -o-transition: all 0.7s ease;
+         transition: all 0.7s ease;
 }
 
-#about-wes {
-  padding-bottom: 100px;
-  padding-top: 20px
+.body {
+  display: none;
+  -webkit-transition: all 0.7s ease;
+  -moz-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
+  transition: all 0.7s ease;
 }
 
-.who-header {
-  color: #fe6d7e;
-  display: inline;
-  margin-bottom: 100px;
+.search {
+  padding-top: 25%;
+  -webkit-transition: all 0.7s ease;
+    -moz-transition: all 0.7s ease;
+      -o-transition: all 0.7s ease;
+         transition: all 0.7s ease;
+  text-align: center;
 }
 
-.who-em {
-  color: #642E68;
+li {
+  background-color: white;
+  margin: 20px 0px 20px 0px;
+  border-radius: 5px;
+  list-style: none;
+  box-shadow: 0px 0px 30px #b2b2b2;
+  padding: 20px;
+  transition: all .5s ease-in-out;
 }
 
-#video {
-  background: white;
-  background-image: url("http://illusion.scene360.com/wp-content/uploads/2015/01/wes-anderson-12.jpg");
-background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100%;
-    padding-top: 100px;
-    background-position: 70% -70%;
-    padding-bottom: 100px;
-    -webkit-clip-path: polygon(0 0%, 1600px 10%, 1600px 100%, 0 100%);
-    clip-path: polygon(0 0%, 1600px 10%, 1600px 100%, 0 100%);
+li:hover {
+  transform: scale(1.1);
 }
 
-.video-dropshadow {
-  box-shadow: 0px 0px 100px #000000;
+a h2 {
+  color: #209ECB
 }
 
-
-@media screen and (max-width: 480px) {
-    #video {
-      background-position: 90% 0%;
-    }
-}
-
-p {
-  color: #51485B;
-}
-
-a, a:visited {
-  color: #527A86;
+a p {
+  color: grey
 }
 
 a:hover {
-  color: #EB7D80;
   text-decoration: none;
 }
 
-.footer {
-  background-color: #932A54;
-  padding-top: 20px;
-  padding-bottom: 10px;
+#random-article {
   color: white;
-  text-align: center;
-}
-
-.footer h6 {
   line-height: 50px;
 }
